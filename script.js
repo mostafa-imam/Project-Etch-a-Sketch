@@ -3,6 +3,11 @@ const btn = document.querySelector('button');
 
 let input = 16;
 
+btn.addEventListener("click", () => {
+    let userInput = +prompt('Pick a Number');
+    createGrid(userInput);
+});
+
 createGrid(input);
 
 function createGrid(input) {
