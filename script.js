@@ -6,7 +6,9 @@ let input = 16;
 createGrid(input);
 
 function createGrid(input) {
-    
+
+    container.textContent = '';
+
     for (let i = 0; i < input; i++) {
 
         let rowContainer = document.createElement('div');
