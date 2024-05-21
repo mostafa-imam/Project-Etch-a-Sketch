@@ -24,3 +24,14 @@
     flex-grow: 1;
     border: solid rgb(112, 108, 108)
 }
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+h1 {
+    text-align: center;
+}
