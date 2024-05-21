@@ -13,6 +13,10 @@ for (let i = 0; i < initialInput; i++) {
         let squareDiv = document.createElement('div');
         squareDiv.classList.add('square-div');
         rowContainer.appendChild(squareDiv);
+        
+        squareDiv.addEventListener("mouseover", () => {
+            squareDiv.style.backgroundColor = "black";
+        });
 
     }
 
