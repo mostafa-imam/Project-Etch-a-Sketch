@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid red; */
+    border: solid red;
 }
 
 .container {
@@ -34,4 +34,11 @@
 
 h1 {
     text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
