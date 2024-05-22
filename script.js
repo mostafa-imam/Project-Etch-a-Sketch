@@ -5,7 +5,7 @@ const output = document.querySelector(".sqrNum-output");
 sqrNum.addEventListener("input", () => {
     const value = sqrNum.value;
     output.textContent = value;
-    createGrid(sqrNum.value);
+    createGrid(value);
 });
 
 let input = 16;
