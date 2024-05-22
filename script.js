@@ -1,13 +1,14 @@
 const container = document.querySelector('.container');
-const btn = document.querySelector('button');
+const sqrNum = document.querySelector("#sqrNum");
+const output = document.querySelector(".sqrNum-output");
 
-let input = 16;
-
-btn.addEventListener("click", () => {
-    let userInput = +prompt('Pick a Number');
-    createGrid(userInput);
+sqrNum.addEventListener("input", () => {
+    const value = sqrNum.value;
+    output.textContent = value;
+    createGrid(sqrNum.value);
 });
 
+let input = 16;
 createGrid(input);
 
 function createGrid(input) {
@@ -30,6 +31,7 @@ function createGrid(input) {
         }
 
         container.appendChild(rowContainer);
+        output.textContent = sqrNum.value;
 
     };
 
