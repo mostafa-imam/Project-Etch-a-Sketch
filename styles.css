@@ -40,3 +40,10 @@ h1 {
     height: 90vh;
     gap: 40px;
 }
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
