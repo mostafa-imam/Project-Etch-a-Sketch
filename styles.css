@@ -10,18 +10,17 @@
     height: 600px;
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    box-shadow: 0px 0px 5px 5px rgb(204, 200, 200);
+    border: solid rgb(233, 229, 229);
 }
 
 .row-container {
     flex-grow: 1;
     display: flex;
-    gap: 1px;
 }
 
 .square-div {
     flex-grow: 1;
-    border: solid rgb(112, 108, 108)
 }
 
 .nav-bar {
