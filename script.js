@@ -26,7 +26,7 @@ function createGrid(input) {
             rowContainer.appendChild(squareDiv);
 
             squareDiv.addEventListener("mouseover", () => {
-                squareDiv.style.backgroundColor = "black";
+                squareDiv.style.backgroundColor = `rgb(${randomizeColor()}, ${randomizeColor()}, ${randomizeColor()})`;
             });
         }
 
@@ -35,4 +35,9 @@ function createGrid(input) {
 
     };
 
+};
+
+function randomizeColor () {
+    const randomColor = Math.floor(Math.random() * 255);
+    return randomColor;
 };
