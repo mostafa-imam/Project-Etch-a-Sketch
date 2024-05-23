@@ -25,19 +25,23 @@ function createGrid(input) {
             squareDiv.classList.add('square-div');
             rowContainer.appendChild(squareDiv);
 
-            squareDiv.addEventListener("mouseover", () => {
-                squareDiv.style.backgroundColor = `rgb(${randomizeColor()}, ${randomizeColor()}, ${randomizeColor()})`;
-            });
         }
 
         container.appendChild(rowContainer);
-        output.textContent = sqrNum.value;
 
     };
 
 };
 
 function randomizeColor () {
-    const randomColor = Math.floor(Math.random() * 255);
-    return randomColor;
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return `rgb(${r}, ${g}, ${b})`;
 };
+
+container.addEventListener("mouseover", (event) => {
+    if (event.target.classList.contains('square-div')) {
+        event.target.style.backgroundColor = randomizeColor();
+    }
+});
